@@ -153,12 +153,10 @@ class MagicDictionary {
     
     TrieNode root;
 
-    /** Initialize your data structure here. */
     public MagicDictionary() {
         root = new TrieNode();
     }
     
-    /** Build a dictionary through a list of words */
     public void buildDict(String[] dict) {
         for (String word : dict) {
             TrieNode node = root;
@@ -174,8 +172,6 @@ class MagicDictionary {
         }
     }
     
-    /** Returns if there is any word in the trie that equals to the given word after modifying exactly one character */
-    /** Returns if there is any word in the trie that equals to the given word after modifying exactly one character */
     public boolean search(String word) {
         return dfs(root, word, 0, 0);
     }
@@ -282,7 +278,6 @@ class MapSum {
     
     private TreeNode root;
 
-    /** Initialize your data structure here. */
     public MapSum() {
         root = new TreeNode();
     }
