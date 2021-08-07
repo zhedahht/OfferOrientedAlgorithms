@@ -17,3 +17,7 @@
 #### 第13章：[回溯法](./Chapter13.md)
 #### 第14章：[动态规划](./Chapter14.md)
 #### 第15章：[图](./Chapter15.md)
+---
+## 购买网址
++ 京东网：https://item.jd.com/13371972.html
++ 当当网：http://product.dangdang.com/29280950.html
