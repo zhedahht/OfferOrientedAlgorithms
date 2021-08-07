@@ -21,3 +21,21 @@
 ## 购买网址
 + 京东网：https://item.jd.com/13371972.html
 + 当当网：http://product.dangdang.com/29280950.html
+---
+## 勘误
+### 第一版第一次印刷
++ 第112页，面试题42的题目描述
+``` java
+class RecentAverage {    
+    public RecentCounter();
+    public int ping(int t);
+}
+```
+应该改为：
+``` java
+class RecentCounter {    
+    public RecentCounter();
+    public int ping(int t);
+}
+```
+
