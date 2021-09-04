@@ -39,3 +39,4 @@ class RecentCounter {
     public int ping(int t);
 }
 ```
++ 第249页，面试题89"分析确定状态转移方程"的第4段的第3行：因此f(1)=nums[0]。应该改为：因此f(0)=nums[0]。
