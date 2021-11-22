@@ -26,6 +26,47 @@
 ### 第一版第一次印刷
 + 第19页，面试题8的分析的第4段的第5-6行：再把指针P2向右移动一步指向数字6。应该改为：再把指针P2向右移动一步指向数字4。
 + 第27页，面试题13的图2.2下面的第二段的“该子矩阵的数字之和等于sums[r2][c2]+sums[r1-1][c2]-sums[r2][c1-1]+sums[r1-1][c1-1]”，应改为“该子矩阵的数字之和等于sums[r2][c2]-sums[r1-1][c2]-sums[r2][c1-1]+sums[r1-1][c1-1]”。
++ 第51页，面试题21的代码中的参数n改为k，即
+``` java
+public ListNode removeNthFromEnd(ListNode head, int n) {
+    ListNode dummy = new ListNode(0);
+    dummy.next = head;
+
+    ListNode front = head, back = dummy;
+    for (int i = 0; i < n; i++) {
+        front = front.next;
+    }
+
+    while (front != null) {
+        front = front.next;
+        back = back.next;
+    }
+
+    back.next = back.next.next;                    
+    return dummy.next;
+}
+```
+应该改为：
+``` java
+public ListNode removeNthFromEnd(ListNode head, int k) {
+    ListNode dummy = new ListNode(0);
+    dummy.next = head;
+
+    ListNode front = head, back = dummy;
+    for (int i = 0; i < k; i++) {
+        front = front.next;
+    }
+
+    while (front != null) {
+        front = front.next;
+        back = back.next;
+    }
+
+    back.next = back.next.next;                    
+    return dummy.next;
+}
+```
+
 + 第112页，面试题42的题目描述
 ``` java
 class RecentAverage {    
