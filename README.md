@@ -68,7 +68,7 @@ public ListNode removeNthFromEnd(ListNode head, int k) {
     return dummy.next;
 }
 ```
-
++ 第104页，第3行：宽是1（5-1-1=3）。应该改为：宽是3（5-1-1=3）。
 + 第112页，面试题42的题目描述
 ``` java
 class RecentAverage {    
