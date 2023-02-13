@@ -83,5 +83,25 @@ class RecentCounter {
     public int ping(int t);
 }
 ```
++ 第245页，面试题88“使用缓存的递归代码”参考代码中的minCostClimbingStairs函数
+``` java
+public int minCostClimbingStairs(int[] cost) {
+    int len = cost.length;
+    int[] dp = new int[len];
+    helper(cost, len - 1, dp);
+    return Math.min(dp[len - 2], dp[len - 1]);
+}
+```
+应该改为：
+``` java
+public int minCostClimbingStairs(int[] cost) {
+    int len = cost.length;
+    int[] dp = new int[len];
+    dp[0] = cost[0];
+    helper(cost, len - 1, dp);
+    return Math.min(dp[len - 2], dp[len - 1]);
+}
+```
+增加了一行代码初始化dp[0]。
 + 第249页，面试题89"分析确定状态转移方程"的第4段的第3行：因此f(1)=nums[0]。应该改为：因此f(0)=nums[0]。
 + 第256页，第2段的第二行“当i等于时”，应改为“当i等于0时”。
